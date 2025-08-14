@@ -28,6 +28,31 @@
     </section>
   </main>
 
+  <!-- Order Form Modal -->
+  <div id="orderModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Place Your Order</h2>
+      <form id="orderForm">
+        <input type="hidden" id="orderProductId" />
+        <p><strong>Product:</strong> <span id="orderProductName"></span></p>
+        <label>
+          Quantity:
+          <input type="number" id="orderQuantity" value="1" min="1" required />
+        </label>
+        <label>
+          Your Name:
+          <input type="text" id="orderName" placeholder="Your full name" required />
+        </label>
+        <label>
+          Your Email:
+          <input type="email" id="orderEmail" placeholder="Your email address" required />
+        </label>
+        <button type="submit">Submit Order</button>
+      </form>
+    </div>
+  </div>
+
   <footer>
     <p>&copy; 2025 Step & Style by Nafis – Bangladesh</p>
   </footer>
