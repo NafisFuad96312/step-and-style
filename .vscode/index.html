@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Home – Step & Style by Nafis</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <img src="logo.png" alt="Step & Style Logo" class="logo">
+      <img src="Logo.png" alt="Step & Style Logo" class="logo" />
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><button id="loginBtn">Login / Register</button></li>
@@ -20,35 +20,33 @@
   </header>
 
   <main>
-    <!-- Hero + Ad Banner -->
+    <!-- Hero Section -->
     <section class="hero">
       <div class="hero-text">
         <h1>Welcome to <span class="highlight">STEP & STYLE</span></h1>
         <p>Your Signature Steps in Bangladesh</p>
       </div>
       <div class="ad-banner">
-        <img src="ad-placeholder.png" alt="Advertisement">
+        <img src="ad-placeholder.png" alt="Advertisement" />
       </div>
     </section>
 
     <!-- Featured Products -->
     <section class="featured">
       <h2>Shop Our Bestsellers</h2>
-      <div class="grid-container" id="featuredProducts">
-        <!-- Injected via JS -->
-      </div>
+      <div class="grid-container" id="featuredProducts"></div>
       <a href="products.html" class="btn">View All Products</a>
     </section>
   </main>
 
-  <!-- Login / Register Modal -->
+  <!-- Login/Register Modal -->
   <div id="modal" class="modal hidden">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h2 id="modalTitle">Login / Register</h2>
+      <h2>Login / Register</h2>
       <form id="authForm">
-        <input type="email" id="email" placeholder="Email" required>
-        <input type="tel" id="mobile" placeholder="Mobile (optional)">
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="tel" id="mobile" placeholder="Mobile (optional)" />
         <button type="submit">Continue</button>
       </form>
     </div>
@@ -57,3 +55,7 @@
   <footer>
     <p>&copy; 2025 Step & Style by Nafis – Bangladesh</p>
   </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

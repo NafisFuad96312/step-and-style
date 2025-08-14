@@ -1,39 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Products – Step & Style by Nafis</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <img src="logo.jpg" alt="Step & Style Logo" class="logo">
+      <img src="Logo.png" alt="Step & Style Logo" class="logo" />
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1>All Shoes</h1>
-    <div class="grid-container" id="allProducts">
-      <!-- Injected via JS -->
-    </div>
+    <section class="products-section">
+      <h1>Our Collection</h1>
+      <p class="intro">
+        Discover our curated selection of premium footwear—trusted quality, stylish designs, and real customer reviews.
+      </p>
+      <div class="grid-container" id="allProducts"></div>
+    </section>
   </main>
-
-  <!-- Order Modal -->
-  <div id="orderModal" class="modal hidden">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Confirm Your Order</h2>
-      <div id="orderDetails"></div>
-      <button id="confirmOrderBtn">Confirm Order</button>
-    </div>
-  </div>
 
   <footer>
     <p>&copy; 2025 Step & Style by Nafis – Bangladesh</p>
