@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Products – Step & Style by Nafis</title>
+  <title>Home – Step &amp; Style by Nafis</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,52 +11,28 @@
     <nav class="navbar">
       <img src="Logo.png" alt="Step & Style Logo" class="logo" />
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="products-section">
-      <h1>Our Collection</h1>
-      <p class="intro">
-        Discover our curated selection of premium footwear—trusted quality, stylish designs, and real customer reviews.
-      </p>
-      <div class="grid-container" id="allProducts"></div>
-    </section>
-  </main>
+  <section class="hero">
+    <h1>Welcome to STEP &amp; STYLE</h1>
+    <p>Your Signature Steps in Bangladesh</p>
+    <button onclick="location.href='products.html'">Shop Now</button>
+  </section>
 
-  <!-- Order Form Modal -->
-  <div id="orderModal" class="modal hidden">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Place Your Order</h2>
-      <form id="orderForm">
-        <input type="hidden" id="orderProductId" />
-        <p><strong>Product:</strong> <span id="orderProductName"></span></p>
-        <label>
-          Quantity:
-          <input type="number" id="orderQuantity" value="1" min="1" required />
-        </label>
-        <label>
-          Your Name:
-          <input type="text" id="orderName" placeholder="Your full name" required />
-        </label>
-        <label>
-          Your Email:
-          <input type="email" id="orderEmail" placeholder="Your email address" required />
-        </label>
-        <button type="submit">Submit Order</button>
-      </form>
-    </div>
-  </div>
+  <section class="bestsellers">
+    <h2>Shop Our Bestsellers</h2>
+    <div class="grid-container" id="allProducts"></div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Step & Style by Nafis – Bangladesh</p>
+    <p>&copy; 2025 Step &amp; Style by Nafis – Bangladesh</p>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
